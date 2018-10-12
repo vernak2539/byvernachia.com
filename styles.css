@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header {
+  font-size: 2em;
+  line-height: 2em;
+  /* margin: 0.67em 0; */
+}
+
+.sub-text {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  /* margin: 0.67em 0; */
+  color: #999;
+}
