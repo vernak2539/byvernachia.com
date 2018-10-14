@@ -1138,14 +1138,7 @@ typeItInstance.type('<span class="header">Hi, I\'m Alex</span>').pause(600).opti
   speed: 50
 }).type('<span class="sub-text">Oh wait... wrong site</span>').pause(800).break().type('<span class="sub-text">Let\'s try again</span>').pause(800).empty().options({
   speed: 60
-}).type('<span class="header">Hi, I\'m Alex</span>').pause(600).break().type('<span class="sub-text">I\'m a software engineer</span>').break().type('<span class="sub-text">focusing on front-end web development</span>').pause(500).type('<span class="sub-text"> #nerd</span>'); // .reset();
-// const actual = typeItInstance => {
-//   typeItInstance.reset();
-//
-//   typeItInstance.type('<span class="header">Hi, I\'m Alex</span>');
-// };
-// joke(typeItInstance);
-// actual(typeItInstance);
+}).type('<span class="header">Hi, I\'m Alex</span>').pause(600).break().type('<span class="sub-text">I\'m a software engineer</span>').break().type('<span class="sub-text">focusing on front-end web development </span>').pause(600).type('<span class="sub-text">#nerd</span>');
 },{"normalize.css":"node_modules/normalize.css/normalize.css","./styles.css":"styles.css","typeit":"node_modules/typeit/dist/typeit.es.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -1173,7 +1166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58615" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50586" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
