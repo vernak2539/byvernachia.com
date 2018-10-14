@@ -2,6 +2,11 @@ import 'normalize.css';
 import './styles.css';
 import TypeIt from 'typeit';
 
+import githubSvg from './svg/github.svg'
+
+const githubIconContainer = document.querySelector('#icon-github');
+githubIconContainer.innerHTML = githubSvg;
+
 const typeItInstance = new TypeIt('#its-me', {
   speed: 60,
   cursorChar: '_'

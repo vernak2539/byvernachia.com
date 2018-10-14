@@ -8,12 +8,13 @@
   "private": true,
   "scripts": {
     "dev": "parcel index.html -p 8080",
-    "build": "parcel build index.html && cp CNAME ./dist",
+    "build": "rm -rf ./dist && parcel build index.html && cp CNAME ./dist",
     "gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "normalize.css": "^8.0.0",
     "parcel-bundler": "^1.10.3",
+    "parcel-plugin-inlinesvg": "^0.0.14",
     "typeit": "^5.10.7"
   }
 }
