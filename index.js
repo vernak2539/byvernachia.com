@@ -2,7 +2,7 @@ import 'normalize.css';
 import './styles.css';
 import TypeIt from 'typeit';
 
-var typeItInstance = new TypeIt('#its-me', {
+const typeItInstance = new TypeIt('#its-me', {
   speed: 60,
   cursorChar: '_'
 });
@@ -28,6 +28,6 @@ typeItInstance
   .break()
   .type('<span class="sub-text">I\'m a software engineer</span>')
   .break()
-  .type('<span class="sub-text">focusing on front-end web development</span>')
-  .pause(500)
-  .type('<span class="sub-text"> #nerd</span>');
+  .type('<span class="sub-text">focusing on front-end web development </span>')
+  .pause(600)
+  .type('<span class="sub-text">#nerd</span>');
