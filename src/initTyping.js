@@ -5,17 +5,26 @@ const QUICKER_SPEED = DEFAULT_SPEED - 10;
 const QUICKEST_SPEED = DEFAULT_SPEED - 20;
 const DEFAULT_PAUSE = 800;
 const SHORTER_PAUSE = 600;
-const elementId = '#its-me';
+const typitElementId = '#its-me';
+const linksElementId = '#links';
+
+const showLinks = () => {
+  const linksContainer = document.querySelector(linksElementId);
+
+  setTimeout(() => {
+    linksContainer.classList.remove('collapsed');
+  }, 500);
+};
 
 export default () => {
   const jokeText = 'I like long walks on the beach, poetry, and sunsets';
   const whoopsText = 'Whoops, wrong site...';
 
-  const typeItInstance = new TypeIt(elementId, {
+  const typeItInstance = new TypeIt(typitElementId, {
     speed: DEFAULT_SPEED,
     cursorChar: '_',
     autoStart: false,
-    afterComplete: () => console.log('done')
+    afterComplete: showLinks
   });
 
   typeItInstance
