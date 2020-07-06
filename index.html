@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="A home page for me, Alex" />
     <meta name="twitter:creator" content="@vernacchia" />
     <meta property="og:url" content="https://byvernacchia.com" />
-    <meta property="og:image" content="https://www.gravatar.com/avatar/634fce01841a0d0946b4a575835f44ec?s=400" />
+    <meta
+      property="og:image"
+      content="https://www.gravatar.com/avatar/634fce01841a0d0946b4a575835f44ec?s=400"
+    />
     <title>* by Vernacchia</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127524927-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-127524927-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-127524927-1');
+      gtag("config", "UA-127524927-1");
     </script>
   </head>
   <body>
     <div class="container">
       <div id="its-me"></div>
       <div id="links" class="links collapsed">
-        <div class="link" data-href="https://www.github.com/vernak2539" data-tippy="Github">
-          <span class="icon" id="icon-github"></span>
+        <div class="links-top">
+          <div class="link" data-tippy-content="Github">
+            <a href="https://www.github.com/vernak2539"
+              ><span class="icon" id="icon-github"></span
+            ></a>
+          </div>
+          <div class="link" data-tippy-content="Talk Code">
+            <a href="https://code.byvernacchia.com"
+              ><span class="icon" id="icon-blog-code"></span
+            ></a>
+          </div>
+          <div class="link" data-tippy-content="Talk Life">
+            <a href="https://exploring.byvernacchia.com"
+              ><span class="icon" id="icon-blog-exploring"></span
+            ></a>
+          </div>
         </div>
-        <div class="link" data-href="https://code.byvernacchia.com" data-tippy="Talk Code">
-          <span class="icon" id="icon-blog-code"></span>
-        </div>
-        <div class="link" data-href="https://exploring.byvernacchia.com" data-tippy="Talk Life">
-          <span class="icon" id="icon-blog-exploring"></span>
-        </div>
-        <div class="link" data-href="https://instagram.com/vernak2539" data-tippy="Instagram">
-          <span class="icon fill-black" id="icon-instagram"></span>
-        </div>
-        <div class="link" data-href="https://500px.com/vernacchia" data-tippy="500px (Photos)">
-          <span class="icon" id="icon-five-hundred-pixels"></span>
+        <div class="links-bottom">
+          <div class="link" data-tippy-content="Instagram">
+            <a href="https://instagram.com/vernak2539"
+              ><span class="icon fill-black" id="icon-instagram"></span
+            ></a>
+          </div>
+          <div class="link" data-tippy-content="500px (Photos)">
+            <a href="https://500px.com/vernacchia"
+              ><span class="icon" id="icon-five-hundred-pixels"></span
+            ></a>
+          </div>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ body {
   height: 100vh;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .header {
@@ -25,29 +26,31 @@ body {
 }
 
 .links {
-  display: flex;
-  height: auto;
+  height: 110px;
   margin-top: 20px;
-  max-height: 100px;
+  transition: height 0.8s ease-out;
   overflow: hidden;
-  transition: max-height 1s ease-out;
 }
 
 .links.collapsed {
-  max-height: 0;
+  height: 0;
+}
+
+.links-top {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  border-bottom: 1px solid #ccc;
+}
+
+.links-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .links .link {
-  background-color: #fdfdfd;
-  border-radius: 50%;
-  border: 1px solid #ccc;
   cursor: pointer;
   margin: 0 10px;
   padding: 11px;
-}
-
-.links .link:hover {
-  background-color: #eee;
 }
 
 .links .link p {

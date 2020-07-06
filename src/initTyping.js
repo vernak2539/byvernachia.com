@@ -13,7 +13,7 @@ const showLinks = () => {
 
   setTimeout(() => {
     linksContainer.classList.remove("collapsed");
-  }, 500);
+  }, 1000);
 };
 
 export default () => {
@@ -24,7 +24,7 @@ export default () => {
     speed: DEFAULT_SPEED,
     cursorChar: "_",
     autoStart: false,
-    afterComplete: showLinks
+    afterComplete: showLinks,
   });
 
   typeItInstance
@@ -49,6 +49,4 @@ export default () => {
     )
     .pause(SHORTER_PAUSE)
     .type('<span class="sub-text">#nerd</span>');
-
-  typeItInstance.init();
 };
